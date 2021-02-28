@@ -1,13 +1,14 @@
 import React from "react";
-import InvoiceList from "./components/invoice-list/InvoiceList.component";
-import InvoiceContextProvider from "./contexts/invoice-context/invoice.context";
+import Navbar from "./components/navbar/Navbar.component";
+import Home from "./pages/home/home.page";
 function App() {
   return (
     <div className="App">
-      <InvoiceContextProvider>
-        <h1>Hello World</h1>
+      <Navbar />
+      <Home />
+      {/* <InvoiceContextProvider>
         <InvoiceList />
-      </InvoiceContextProvider>
+      </InvoiceContextProvider> */}
     </div>
   );
 }
